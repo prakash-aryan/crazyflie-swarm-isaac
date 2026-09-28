@@ -1,0 +1,8 @@
+assets/
+ext/
+maps/
+runs/
+.venv-ros/
+plans/*/reference.npy
+__pycache__/
+*.pyc

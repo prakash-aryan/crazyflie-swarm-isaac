@@ -1,0 +1,125 @@
+fileversion: 3
+robots:
+  cf1:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E701
+    initial_position: [-36.7000, -59.5000, 0.0]
+    type: cf21
+  cf2:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E702
+    initial_position: [-36.1000, -59.5000, 0.0]
+    type: cf21
+  cf3:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E703
+    initial_position: [-35.5000, -59.5000, 0.0]
+    type: cf21
+  cf4:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E704
+    initial_position: [-34.9000, -59.5000, 0.0]
+    type: cf21
+  cf5:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E705
+    initial_position: [-34.3000, -59.5000, 0.0]
+    type: cf21
+  cf6:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E706
+    initial_position: [-36.7000, -58.9000, 0.0]
+    type: cf21
+  cf7:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E707
+    initial_position: [-36.1000, -58.9000, 0.0]
+    type: cf21
+  cf8:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E708
+    initial_position: [-35.5000, -58.9000, 0.0]
+    type: cf21
+  cf9:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E709
+    initial_position: [-34.9000, -58.9000, 0.0]
+    type: cf21
+  cf10:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E70A
+    initial_position: [-34.3000, -58.9000, 0.0]
+    type: cf21
+  cf11:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E70B
+    initial_position: [-36.7000, -58.3000, 0.0]
+    type: cf21
+  cf12:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E70C
+    initial_position: [-36.1000, -58.3000, 0.0]
+    type: cf21
+  cf13:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E70D
+    initial_position: [-35.5000, -58.3000, 0.0]
+    type: cf21
+  cf14:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E70E
+    initial_position: [-34.9000, -58.3000, 0.0]
+    type: cf21
+  cf15:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E70F
+    initial_position: [-34.3000, -58.3000, 0.0]
+    type: cf21
+  cf16:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E710
+    initial_position: [-36.7000, -57.7000, 0.0]
+    type: cf21
+  cf17:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E711
+    initial_position: [-36.1000, -57.7000, 0.0]
+    type: cf21
+  cf18:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E712
+    initial_position: [-35.5000, -57.7000, 0.0]
+    type: cf21
+  cf19:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E713
+    initial_position: [-34.9000, -57.7000, 0.0]
+    type: cf21
+  cf20:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E714
+    initial_position: [-34.3000, -57.7000, 0.0]
+    type: cf21
+robot_types:
+  cf21:
+    motion_capture:
+      tracking: "librigidbodytracker"
+      marker: default_single_marker
+      dynamics: default
+    big_quad: false
+    battery:
+      voltage_warning: 3.8
+      voltage_critical: 3.7
+all:
+  firmware_logging:
+    enabled: false
+  firmware_params:
+    commander:
+      enHighLevel: 1
+    stabilizer:
+      estimator: 2
+      controller: 2
+  reference_frame: "world"
+  broadcasts:
+    num_repeats: 15
+    delay_between_repeats_ms: 1
